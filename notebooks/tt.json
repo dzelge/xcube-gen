@@ -1,0 +1,41 @@
+{
+  "input_configs": [
+    {
+      "store_id": "@sentinelhub",
+      "data_id": "S2L2A",
+      "open_params": {
+        "tile_size": [
+          1000,
+          1000
+        ]
+      }
+    }
+  ],
+  "cube_config": {
+    "variable_names": [
+      "B01",
+      "B02"
+    ],
+    "bbox": [
+      7,
+      53,
+      9,
+      55
+    ],
+    "spatial_res": 0.001,
+    "crs": "WGS84",
+    "time_range": [
+      "2000-06-20",
+      "2000-06-22"
+    ],
+    "time_period": "1D"
+  },
+  "output_config": {
+    "store_id": "s3",
+    "store_params": {
+      "bucket_name": "eurodatacube-test",
+      "aws_access_key_id": "***",
+      "aws_secret_access_key": "***"
+    }
+  },
+}
